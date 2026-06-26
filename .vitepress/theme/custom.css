@@ -1,0 +1,85 @@
+/* === 表格美化 === */
+.vp-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 16px;
+  border-bottom: 2px solid var(--vp-c-divider);
+}
+
+.vp-doc td {
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--vp-c-divider-light);
+}
+
+.vp-doc tr:hover td {
+  background: var(--vp-c-bg-soft);
+}
+
+/* === 引用块美化 === */
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.vp-doc blockquote p {
+  margin: 4px 0;
+}
+
+/* === 元数据卡片 === */
+.vp-doc div[class*='custom-block'] {
+  border-radius: 8px;
+}
+
+/* === 提示块美化 === */
+.vp-doc .tip {
+  border-color: #42b883;
+}
+
+.vp-doc .warning {
+  border-color: #e7c000;
+}
+
+.vp-doc .danger {
+  border-color: #cc0000;
+}
+
+/* === 标签样式 === */
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 4px;
+}
+
+.tag人口学 { background: #e0f2fe; color: #0369a1; }
+.tag性别研究 { background: #fce7f3; color: #be185d; }
+.tag中国 { background: #fef3c7; color: #92400e; }
+.tag政策分析 { background: #d1fae5; color: #065f46; }
+
+/* === 置信度指示器 === */
+.confidence-high { color: #059669; font-weight: 600; }
+.confidence-medium { color: #d97706; font-weight: 600; }
+.confidence-low { color: #dc2626; font-weight: 600; }
+
+/* === 响应式调整 === */
+@media (max-width: 768px) {
+  .vp-doc table {
+    font-size: 12px;
+  }
+  .vp-doc th,
+  .vp-doc td {
+    padding: 6px 8px;
+  }
+}
